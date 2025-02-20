@@ -1,71 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>炫酷自我介绍</title>
+    <title>自我介绍</title>
     <style>
         body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(45deg, #ff7e5f, #feb47b);
-            color: #fff;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
         }
         .container {
-            text-align: center;
-            padding: 20px;
+            background-color: #fff;
+            padding: 20px 40px;
             border-radius: 10px;
-            background: rgba(0, 0, 0, 0.5);
-            box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
         }
         h1 {
-            font-size: 3em;
+            color: #007BFF;
             margin-bottom: 20px;
-            animation: fadeIn 2s ease-in-out;
         }
         p {
-            font-size: 1.2em;
-            line-height: 1.5;
+            font-size: 18px;
+            line-height: 1.6;
             margin-bottom: 20px;
-            animation: fadeIn 2s ease-in-out 1s;
         }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            font-size: 1em;
-            color: #fff;
-            background: #ff5722;
-            border: none;
-            border-radius: 5px;
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            border: 4px solid #007BFF;
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
             text-decoration: none;
-            cursor: pointer;
-            animation: fadeIn 2s ease-in-out 1.5s;
+            color: #007BFF;
+            margin: 0 10px;
+            font-size: 20px;
+            transition: color 0.3s ease;
         }
-        .btn:hover {
-            background: #e64a19;
-        }
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .social-links a:hover {
+            color: #0056b3;
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <img src="your-profile-image.jpg" alt="头像" class="profile-img">
         <h1>你好，我是[你的名字]</h1>
-        <p>一个热爱编程、设计和探索新技术的开发者。我擅长前端开发，喜欢用代码创造美好的用户体验。</p>
-        <a href="https://your-portfolio.com" class="btn">查看我的作品</a>
+        <p>
+            我是一名[你的职业]，专注于[你的专业领域]。我热爱[你的兴趣爱好]，并且一直在不断学习和提升自己。我相信通过努力和坚持，可以实现自己的目标。
+        </p>
+        <p>
+            在过去的几年里，我参与了多个项目，积累了丰富的经验。我擅长[你的技能]，并且喜欢挑战新的事物。希望未来能够与更多志同道合的人一起合作，共同成长。
+        </p>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+            <a href="https://github.com/yourprofile" target="_blank">GitHub</a>
+            <a href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+        </div>
     </div>
 </body>
 </html>
